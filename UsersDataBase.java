@@ -33,8 +33,6 @@ public class UsersDataBase implements AuthApp{
 		boolean accFound=false;
 		for(int i=0;i<usersList.size();i++) {
 			Register reg=usersList.get(i);
-			System.out.println(reg);
-			System.out.println(reg.getEmail()+"\n"+reg.getPassword()+"\n"+email+"\n"+password);
 			if(reg.getEmail()==email&&reg.getPassword()==password) {
 				foundAcc=reg;
 				login =true;
